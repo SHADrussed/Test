@@ -10,3 +10,7 @@ test('subtract returns the difference of two numbers', () => {
   assert.equal(subtract(5, 3), 2);
   assert.equal(subtract(3, 5), -2);
 });
+
+test('subtract returns zero for equal numbers', () => {
+  assert.equal(subtract(3, 3), 0);
+});
