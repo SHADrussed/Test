@@ -28,7 +28,7 @@ Pull Request: [#3 — AI-LAB Autonomous development experiment](https://github.c
 | `npm run build` | Успех: Vite 8.3.4, преобразовано 17 модулей; CSS 5.81 kB, JS 226.67 kB |
 | `git diff --cached --check` | Успех, ошибок форматирования diff нет |
 
-GitHub CI для этой ветки не подтверждён; команды выше — локальные проверки. В `origin/main` GitHub Actions workflow отсутствует, удалённый combined status коммита `4419a5442810bee744dee4e6dc9081f782502e6a` вернул пустой список checks.
+GitHub CI для этой ветки не подтверждён; команды выше — локальные проверки. В `origin/main` GitHub Actions workflow отсутствует. Удалённый combined status последнего кода-коммита `ec8574d5132ec76ebaf2278d4a82a70589820dac` вернул пустой список checks.
 
 ## Commits и файлы
 
@@ -36,8 +36,10 @@ GitHub CI для этой ветки не подтверждён; команды
 | --- | --- |
 | `1124e0a` — `feat: add task management app to autonomous lab` | Каркас, UI, CRUD, статусы, поиск/фильтры, localStorage, тесты и конфигурация |
 | `4419a54` — `docs: document autonomous lab verification` | Отчёт и результаты локальной проверки |
+| `ec8574d` — `docs: link PR and finalize lab report` | Ссылка на PR и итоговый статус |
+| Текущий коммит — `docs: complete AI report commit inventory` | Этот полный список коммитов и файлов отчёта |
 
-В первом коммите: `.gitignore`, `eslint.config.js`, `index.html`, `package.json`, `package-lock.json`, `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`, `vite.config.ts`, `src/App.tsx`, `src/App.test.tsx`, `src/main.tsx`, `src/styles.css`, `src/taskStorage.ts`, `src/taskStorage.test.ts`, `src/test/setup.ts`, `src/vite-env.d.ts`. Отчёт добавлен коммитом `4419a54`.
+В первом коммите: `.gitignore`, `eslint.config.js`, `index.html`, `package.json`, `package-lock.json`, `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`, `vite.config.ts`, `src/App.tsx`, `src/App.test.tsx`, `src/main.tsx`, `src/styles.css`, `src/taskStorage.ts`, `src/taskStorage.test.ts`, `src/test/setup.ts`, `src/vite-env.d.ts`. Коммиты `4419a54`, `ec8574d` и текущий меняют только `AI_REPORT.md`.
 
 Финальная ссылка на PR и сверка статусов добавлены в отдельном коммите документации после публикации ветки.
 
