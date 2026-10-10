@@ -4,6 +4,8 @@
 
 Готово небольшое React + TypeScript приложение задач. Код приложения находится только в `codex-autonomous-lab/`, ветка — `ai/agent-night-test`. Задачи можно создавать, редактировать, удалять и переводить между статусами; доступны поиск и фильтры. Список хранится в `localStorage`; повреждённые данные пропускаются с предупреждением, ошибки чтения и записи показываются в интерфейсе. Есть адаптивная верстка, пустые состояния и тесты.
 
+Pull Request: [#3 — AI-LAB Autonomous development experiment](https://github.com/SHADrussed/Test/pull/3) (открыт, не слит).
+
 ## Этапы
 
 | Этап | Критерии готовности | Итог |
@@ -11,7 +13,7 @@
 | 1. React + TypeScript, CRUD | Создание, редактирование, удаление, пустой список | Завершён |
 | 2. Статусы и поиск | Смена статуса, фильтр по статусу, поиск по названию и подробностям | Завершён |
 | 3. Хранение и ошибки | localStorage, проверка формата, сообщения о сбоях, тесты и адаптивный интерфейс | Завершён |
-| 4. Проверка и отчёт | Чистая установка, тесты/typecheck/lint/build, review diff | Завершён |
+| 4. Проверка и отчёт | Чистая установка, тесты/typecheck/lint/build, review diff и PR | Завершён |
 
 ## Проверки
 
@@ -26,24 +28,25 @@
 | `npm run build` | Успех: Vite 8.3.4, преобразовано 17 модулей; CSS 5.81 kB, JS 226.67 kB |
 | `git diff --cached --check` | Успех, ошибок форматирования diff нет |
 
-GitHub CI для этой ветки не подтверждён; команды выше — локальные проверки. В `origin/main` GitHub Actions workflow отсутствует.
+GitHub CI для этой ветки не подтверждён; команды выше — локальные проверки. В `origin/main` GitHub Actions workflow отсутствует, удалённый combined status коммита `4419a5442810bee744dee4e6dc9081f782502e6a` вернул пустой список checks.
 
 ## Commits и файлы
 
 | Commit | Содержание |
 | --- | --- |
 | `1124e0a` — `feat: add task management app to autonomous lab` | Каркас, UI, CRUD, статусы, поиск/фильтры, localStorage, тесты и конфигурация |
+| `4419a54` — `docs: document autonomous lab verification` | Отчёт и результаты локальной проверки |
 
-В коммите: `.gitignore`, `eslint.config.js`, `index.html`, `package.json`, `package-lock.json`, `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`, `vite.config.ts`, `src/App.tsx`, `src/App.test.tsx`, `src/main.tsx`, `src/styles.css`, `src/taskStorage.ts`, `src/taskStorage.test.ts`, `src/test/setup.ts`, `src/vite-env.d.ts`.
+В первом коммите: `.gitignore`, `eslint.config.js`, `index.html`, `package.json`, `package-lock.json`, `tsconfig.json`, `tsconfig.app.json`, `tsconfig.node.json`, `vite.config.ts`, `src/App.tsx`, `src/App.test.tsx`, `src/main.tsx`, `src/styles.css`, `src/taskStorage.ts`, `src/taskStorage.test.ts`, `src/test/setup.ts`, `src/vite-env.d.ts`. Отчёт добавлен коммитом `4419a54`.
 
-Этот отчёт фиксируется отдельным следующим коммитом.
+Финальная ссылка на PR и сверка статусов добавлены в отдельном коммите документации после публикации ветки.
 
 ## Известные ограничения и незавершённое
 
 - Данные локальны для браузера и устройства; синхронизации между устройствами нет.
 - Проверки прошли локально; результата GitHub CI нет.
 - Известных дефектов по результатам тестов и review diff не выявлено.
-- PR будет создан из `ai/agent-night-test`; его ссылка и состояние CI появятся после публикации ветки.
+- PR #3 открыт из `ai/agent-night-test`; все изменения приложения ограничены тестовым каталогом.
 
 ## Рекомендации
 
